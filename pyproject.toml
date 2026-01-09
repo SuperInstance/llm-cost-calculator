@@ -1,0 +1,60 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "llm-cost-calculator"
+version = "1.0.0"
+description = "Comprehensive cost calculation and optimization for LLM APIs"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+    {name = "LucidDreamer", email = "info@luciddreamer.dev"}
+]
+keywords = [
+    "llm",
+    "cost",
+    "calculator",
+    "pricing",
+    "optimization",
+    "budget",
+    "openai",
+    "anthropic",
+    "gemini",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+dependencies = [
+    "typing-extensions>=4.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+    "black>=23.0.0",
+    "mypy>=1.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/luciddreamer/llm-cost-calculator"
+Documentation = "https://github.com/luciddreamer/llm-cost-calculator#readme"
+Repository = "https://github.com/luciddreamer/llm-cost-calculator"
+
+[tool.setuptools]
+packages = ["llm_cost_calculator"]
+
+[tool.black]
+line-length = 100
+target-version = ['py38', 'py39', 'py310', 'py311', 'py312']
